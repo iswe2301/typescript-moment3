@@ -1,1 +1,11 @@
-<p>mobile-menu works!</p>
+    <!-- Mobilmeny -->
+    <div class="menu-container">
+        <nav class="mobile-menu hidden">
+            <ul>
+                <li><a routerLink="/home" routerLinkActive="active">Startsida</a></li>
+                <li><a routerLink="/convert" routerLinkActive="active">Konvertering</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">Om sidan</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" (click)="toggleMenu()">MENY <i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
+    </div>
