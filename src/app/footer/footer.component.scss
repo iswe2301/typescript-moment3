@@ -1,0 +1,18 @@
+@use '../../styles/abstracts';
+
+// Footer
+footer {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    margin: 10rem 0 0 0;
+    background-color: abstracts.$primary-color;
+    color: abstracts.$light-text-color;
+    text-align: center;
+  
+    p {
+      margin: 0;
+      max-width: none;
+    }
+  }
+  
