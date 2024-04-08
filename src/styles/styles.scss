@@ -26,6 +26,19 @@ body {
     height: 100%;
 }
 
+// Huvudinnehåll
+main {
+    @include abstracts.center-flex();
+    background: abstracts.$bg-color-white;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 10rem auto;
+    padding: 2rem 4rem 4rem 4rem;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #0000004d;
+  }
+
 /* Styling för rubriker, mixin för gemensamma egenskaper */
 h1 {
     @include abstracts.heading-style(3rem, 4rem, 700);
@@ -105,4 +118,21 @@ input {
 label {
     @include abstracts.heading-style(1.6rem, 2.6rem, 600);
     margin-bottom: 0.5rem;
+}
+
+// Döljer overlay initialt
+#overlay.hidden {
+    display: none;
+}
+
+// Klass för opacitet när mobilmeny öppnas (JS)
+#overlay.opacity {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
