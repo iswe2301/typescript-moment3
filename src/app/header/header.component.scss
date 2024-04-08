@@ -1,0 +1,48 @@
+@use '../../styles/abstracts';
+
+// Header
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  
+    img {
+      max-width: 1200px;
+    }
+  }
+  
+  // Nav
+  nav {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid abstracts.$nav-color;
+    border-bottom: 1px solid abstracts.$nav-color;
+    margin: 5rem 10% 5rem 10%;
+    padding: 2rem;
+  
+    ul {
+      display: flex;
+  
+      li {
+        list-style-type: none;
+        margin: 0 1rem;
+  
+        a {
+          @extend %nav-style;
+        }
+      }
+    }
+  }
+  
+  // Klass för aktiv-länk
+  .active {
+    color: abstracts.$link-color;
+    text-decoration: underline;
+    text-decoration-color: abstracts.$basic-black;
+    text-underline-offset: 0.5rem;
+    background-color: abstracts.$bg-color-white;
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 5px;
+  }
