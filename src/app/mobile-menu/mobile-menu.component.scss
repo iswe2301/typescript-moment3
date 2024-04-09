@@ -43,7 +43,7 @@
     // Styling för menyknappen
     .menu-toggle {
         background-color: abstracts.$mobile-nav-color;
-        color: white !important;
+        color: rgb(0, 0, 0) !important;
         border: none;
         cursor: pointer;
         @include abstracts.heading-style(2.5rem, 2.5rem, 600);
@@ -81,7 +81,7 @@
             margin-top: 8rem;
 
             li {
-                margin: 1rem 0;
+                margin: 1.5rem 0;
 
                 a {
                     font-size: 2rem;
@@ -90,7 +90,7 @@
                     letter-spacing: 0.2rem;
                     text-decoration: none;
                     padding: 1rem;
-                    color: abstracts.$light-text-color;
+                    color: abstracts.$basic-black;
 
                     &:active {
                         color: abstracts.$basic-black;
@@ -108,7 +108,7 @@
 
     .active {
         color: abstracts.$light-text-color;
-        background-color: abstracts.$link-color;
+        background-color: abstracts.$mobile-nav-color;
         text-decoration: underline !important;
         text-decoration-color: abstracts.$basic-black !important;
         text-underline-offset: 0.5rem;
