@@ -21,7 +21,7 @@ body {
     line-height: 2.6rem;
     font-family: abstracts.$font-text;
     font-weight: 400;
-    background-color: abstracts.$background-color;
+    background-color: abstracts.$bg-color-white;
     color: abstracts.$text-color;
     height: 100%;
 }
@@ -33,23 +33,23 @@ main {
     width: 80%;
     max-width: 1200px;
     min-height: 100vh;
-    margin: 10rem auto;
-    padding: 2rem 4rem 4rem 4rem;
+    margin: 1rem auto;
+    padding: 2rem;
     position: relative;
-    box-shadow: 0px 0px 10px 0px #0000004d;
   }
 
 /* Styling för rubriker, mixin för gemensamma egenskaper */
 h1 {
-    @include abstracts.heading-style(3rem, 4rem, 700);
+    @include abstracts.heading-style(3.6rem, 4rem, 700);
     text-align: center;
+    letter-spacing: 0.5rem;
     color: abstracts.$primary-color;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 h2 {
     @include abstracts.heading-style(2.6rem, 3.6rem, 600);
-    margin: 4rem 0 4rem 2rem;
+    margin: 4rem 0 2rem 0;
 }
 
 h3 {
@@ -64,8 +64,7 @@ h4 {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2.4rem;
-        letter-spacing: 0.2rem;
+        font-size: 3rem;
         margin: 2rem 0 0 0;
     }
 
