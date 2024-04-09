@@ -7,6 +7,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  background-color: abstracts.$mobile-nav-color;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
 
   img {
     max-width: 1200px;
@@ -19,7 +21,7 @@ nav {
   justify-content: center;
   border-top: 1px solid abstracts.$nav-color;
   border-bottom: 1px solid abstracts.$nav-color;
-  margin: 5rem 10% 5rem 10%;
+  margin: 2rem 10% 2rem 10%;
   padding: 2rem;
 
   ul {
@@ -38,11 +40,11 @@ nav {
 
 // Klass för aktiv-länk
 .active {
-  color: abstracts.$link-color !important;
+  color: abstracts.$light-text-color !important;
   text-decoration: underline !important;
-  text-decoration-color: abstracts.$basic-black !important;
+  text-decoration-color: abstracts.$light-text-color !important;
   text-underline-offset: 0.5rem !important;
-  background-color: abstracts.$bg-color-white !important;
+  background-color: darken(abstracts.$mobile-nav-color, 20%) !important;
   padding: 0.5rem 1rem 1rem 1rem !important;
   border-radius: 5px !important;
 }
