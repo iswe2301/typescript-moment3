@@ -1,17 +1,17 @@
 // Variabler för text och färger
 $font-text: 'Roboto', Helvetica, Arial, sans-serif;
 $font-heading: "Montserrat", 'Roboto', Helvetica, sans-serif;
-$background-color: rgb(255, 255, 255);
+$background-color: rgb(230, 230, 230);
 $bg-color-white: rgb(255, 255, 255);
 $primary-color: rgb(32, 32, 32);
 $basic-black: black;
 $secondary-color: rgb(34, 112, 185);
 $light-grey-color: rgb(190, 190, 190);
 $light-pink: rgb(255, 248, 252);
-$link-color: hotpink;
+$link-color: rgb(31, 206, 153);
 $transparent-grey: rgba(51, 51, 51, 0.9);
 $nav-color: rgb(77, 74, 75);
-$mobile-nav-color: hotpink;
+$mobile-nav-color: rgb(171, 219, 206);
 $sub-head-color: #05081f;
 $hover-color: darken($link-color, 10%);
 $table-hover: darken($bg-color-white, 10%);
