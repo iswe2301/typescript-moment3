@@ -1,0 +1,118 @@
+@use '../../styles/abstracts';
+
+.menu-container {
+    display: none;
+}
+
+// Styling för enheter mindre än 800px bredd
+@media (max-width: 800px) {
+
+    // Container för mobilmenyn, fixerad längst ner på skärmen
+    .menu-container {
+        position: fixed;
+        display: flex;
+        justify-content: flex-end; // Justerar menyknapp till slutet av containern (höger)
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        background-color: abstracts.$mobile-nav-color;
+        z-index: 2;
+        box-shadow: 0px -4px 10px 0px rgb(0 0 0 / 30%); // Skugga på mobilmeny-containern
+    }
+
+    // Styling för mobilmeny, fixerad position
+    .mobile-menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        border-radius: 50% 50% 0 0; // Ger toppkanterna en rundad form
+        background-color: abstracts.$mobile-nav-color;
+        transform: translateY(105%); // Initialt flyttad 105% nedåt, vilket döljer menyn och skuggan
+        transition: transform 0.5s ease; // Animationstiden för att visa/dölja menyn
+        z-index: 1; // Ser till att menyn är under menyknappen
+        box-shadow: 0 -8px 12px 2px rgb(0 0 0 / 20%); // Skugga på mobilmenyn
+    }
+
+    // Styling när klassen .show läggs till
+    .mobile-menu.show {
+        transform: translateY(0); // Glider upp och täcker 50 % av skärmen från botten
+    }
+
+    // Styling för menyknappen
+    .menu-toggle {
+        background-color: abstracts.$mobile-nav-color;
+        color: white !important;
+        border: none;
+        cursor: pointer;
+        @include abstracts.heading-style(2.5rem, 2.5rem, 600);
+        padding: 0 6rem 0 0;
+        z-index: 3; // Ser till att knappen är över både menyn och container
+
+        // Stylingr för ikonerna inom .menu-toggle
+        i {
+            transition: transform 0.3s ease, opacity 0.3s ease; // Animerar rotation och opacitet
+            position: absolute; // Absolut positionering i förhållande till .menu-toggle
+            top: 50%;
+            right: 1rem;
+            transform: translate(-50%, -50%) rotate(0deg); // Centrerar och ingen initial rotation
+            transform-origin: 50% 50%; // Rotationscentrum i ikonens mitt
+        }
+
+        // Specifika stilar när .fa-bars är aktiv
+        .fa-bars {
+            opacity: 1; // Gör menyikonen synlig initialt
+        }
+
+        // Specifika stilar när .fa-xmark är aktiv
+        .fa-xmark {
+            opacity: 0; // Gör kryssikonen är osynlig initialt
+            transform: translate(-50%, -50%) rotate(-360deg); // Startläge för rotationen vid övergång
+        }
+    }
+
+    nav {
+        margin: 0;
+        border: none;
+
+        ul {
+            flex-direction: column; // Ändrar flex-direction
+            margin-top: 8rem;
+
+            li {
+                margin: 1rem 0;
+
+                a {
+                    font-size: 2rem;
+                    font-family: abstracts.$font-heading;
+                    font-weight: 600;
+                    letter-spacing: 0.2rem;
+                    text-decoration: none;
+                    padding: 1rem;
+                    color: abstracts.$light-text-color;
+
+                    &:active {
+                        color: abstracts.$basic-black;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: abstracts.$basic-black;
+                        text-underline-offset: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        color: abstracts.$light-text-color;
+        background-color: abstracts.$link-color;
+        text-decoration: underline !important;
+        text-decoration-color: abstracts.$basic-black !important;
+        text-underline-offset: 0.5rem;
+        padding: 0.5rem 1rem 1rem 1rem;
+        border-radius: 5px;
+    }
+}
