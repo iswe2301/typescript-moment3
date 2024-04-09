@@ -38,13 +38,13 @@ nav {
 
 // Klass för aktiv-länk
 .active {
-  color: abstracts.$link-color;
-  text-decoration: underline;
-  text-decoration-color: abstracts.$basic-black;
-  text-underline-offset: 0.5rem;
-  background-color: abstracts.$bg-color-white;
-  padding: 0.5rem 1rem 1rem 1rem;
-  border-radius: 5px;
+  color: abstracts.$link-color !important;
+  text-decoration: underline !important;
+  text-decoration-color: abstracts.$basic-black !important;
+  text-underline-offset: 0.5rem !important;
+  background-color: abstracts.$bg-color-white !important;
+  padding: 0.5rem 1rem 1rem 1rem !important;
+  border-radius: 5px !important;
 }
 
 // Styling för enheter mindre än 800px bredd
