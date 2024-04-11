@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "postbuild": "cp _redirects dist/ts-moment-3/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
