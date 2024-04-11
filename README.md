@@ -1,27 +1,31 @@
-# TsMoment3
+# DT208G - Programmering i TypeScript, Moment 3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+## Projektbeskrivning
+I detta projekt har en Angular-baserad webbapplikation skapats för att erbjuda en plattform där användare kan utföra enhetskonverteringar mellan olika mätsystem, såsom meter till fot och Celsius till Fahrenheit. Applikationen innehåller funktioner för att interaktivt konvertera värden, visa resultat, samt lära sig mer om projektet och dess utveckling.
 
-## Development server
+## Webbapplikationen (J)unis Converter
+Applikationen är skapad med syftet att erbjuda en användarvänlig tjänst för alla som behöver göra snabba enhetskonverteringar. Applikationen är byggd med Angular, HTML och TypeScript. Styling har gjorts med SCSS. All interaktion på applikationen hanteras genom Angulars komponenter och databinding.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Webbapplikationen består av tre sidor:
 
-## Code scaffolding
+* **Hem:** Startsida som presenterar applikationen och dess innehåll.
+* **Konvertering:** En undersida där användare kan ange värden för att konvertera mellan olika enheter.
+* **Om sidan:** En undersida som beskriver projektets utvecklingsprocess.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+De funktionaliteter som har skapats är:
 
-## Build
+* **Enhetskonvertering:** Användare kan fylla i värden för att konvertera mellan meter och fot, eller Celsius och Fahrenheit.
+* **Dynamisk uppdatering:** Resultaten uppdateras direkt när användaren skriver in nya värden, med hjälp av Angulars tvåvägsdatabinding.
+* **Navigering:** Webbapplikationen använder Angulars router-modul för att enkelt navigera mellan webbplatsens sidor, utan att ladda om sidorna.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Utvecklingsmiljö
+* **Angular CLI:** för att skapa och hantera Angular-projektstrukturen.
+* **Node.js:** som plattform för att köra JavaScript på serversidan.
+* **Netlify:** för publicering av webbapplikationen.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Om
+* **Av:** Isa Westling
+* **Kurs:** DT208G Programmering i TypeScript
+* **Program:** Webbutvecklingsprogrammet
+* **År:** 2024
+* **Skola:** Mittuniversitetet
