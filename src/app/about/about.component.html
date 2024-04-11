@@ -1,1 +1,62 @@
-<p>about works!</p>
+<h2>Om sidan</h2>
+
+<section>
+    <h3>Projektbeskrivning</h3>
+    <p>Denna webbapplikation har utvecklats av Isa Westling i kursen Programmering i TypeScript som ingår i
+        Mittuniversitetets program Webbutveckling.</p>
+    <p>Projektet gick ut på att skapa en webbapplikation som bygger på Angular och som erbjuder användare möjlighet att
+        konvertera olika enheter, från meter till fot samt celsius till fahrenheit.</p>
+    <h3>Utveckling av projektet</h3>
+    <h4>Navigering</h4>
+    <p>Navigeringen mellan appikationens sidor sköts med Angulars router-modul. Jag definierade mina routes i
+        app.routes.ts
+        för att koppla sökvägar till specifika komponenter. Dessa inkluderar rutter för att hantera omdirigeringar och
+        404-fel, vilket förbättrar användarupplevelsen genom att ge användarna feedback när en sida inte finns
+        tillgänglig.
+    </p>
+    <h4>Komponentstruktur</h4>
+    <p>Applikationen är uppbyggd av återanvändbara Angular-komponenter. Samtliga sidor är byggda i separata komponenter.
+        Utöver detta valde jag även att skapa en HeaderComponent samt en FooterComponent som återanvänds på varje sida.
+        Till sist skapade jag en MobileMenuComponent som visas som navigering på mindre enheter. Här använder jag
+        Angulars
+        property-binding och event-binding för för att visa och dölja menyn baserat på användarens interaktioner, till
+        exempel när användaren klickar på menyknappen eller någonstans på skärmen utanför menyn.
+    </p>
+    <h4>Bildfunktionalitet</h4>
+    <p>Bilden på katten Juni har AI-genererats med hjälp av DALL-E. Till bilden används property-binding samt
+        event-binding för att
+        dynamiskt uppdatera bildens källa och textinnehållet baserat på användarinteraktion.</p>
+    <h4>Konverteringsfunktionalitet</h4>
+    <p>För att tillåta användare att konvertera mellan meter och fot samt Celsius och Fahrenheit, skapade jag ett
+        fomrulär
+        med hjälp av Angulars FormsModule. Tvåvägsdatabindning (ngModel) användes för att koppla inputfält till
+        komponentens egenskaper, vilket gör det möjligt att dynamiskt uppdatera värdena när användaren skriver
+        in nya värden. Beräkningarna för respektive formel skapades i separata metoder inuti klassen för
+        convert-komponenten.</p>
+    <p>Eftersom jag inte ville skriv ut konverteringsvärdena med extremt många decimaler valde jag att använda Angulars
+        NumberPipe med interpolation. På så sätt skrivs det endast ut maximalt två decimaler i resultatet.</p>
+    <h4>Styling</h4>
+    <p>Applikationens design och layout har skapats med SCSS för att kunna använda funktioner som variabler och nesting.
+        Den
+        grundläggande globala styling skapades i huvudfilen styles.scss, medan komponent-specifika stilar skapades i
+        respektive komponents scss-fil.</p>
+    <h3>Slutsatser</h3>
+    <p>Jag har verkligen sett fram emot att börja arbeta med ramverk då jag varit nyfiken på hur utvecklignsprocessen
+        ser ut. Det ska bli väldigt spännande att få fortsätta arbeta mer med Angular, och även testa på andra Ramverk
+        framåt.</p>
+    <p>Mycket av funktionaliteten känns väldigt logiskt och jag upplever att det underlättar mycket att kunna dela upp
+        applikationen i komponenter då det blir enklare att hålla reda på koden och hitta i projektet, speciellt vad
+        gäller CSS.</p>
+    <p>Det var ett väldigt nytt och annorlunda sätt och "tänk" att komma in i data-binding. Jag kände att jag vid
+        flertalet tillfällen ville skapa händelselyssnare och använda getElement, men fick försöka tänka om kring hur
+        det istället kan göras med databinding. Det som tog längst tid att få till var min mobilmeny, då jag är van att
+        göra denna i JS med eventlisteners.</p>
+    <p>Jag tror att det kommer att ta ett litet tag att vänja sig, men när man
+        väl kommer in i det så kommer det att löna sig enormt. Jag tycker att jag i redan detta projekt märker att
+        utvecklingstiden snabbats på.</p>
+    <p>Sidenote - min AI-genererade katt tog extremt lång tid att få till rätt, när väl det femte benet försvann och
+        båda
+        bilderna lyckats bli hyfsat lika katter (med lite efterfix i PS).</p>
+    <p>I övrigt tycker jag att webbplatsen blir mycket snyggare och mer sömlös när sidorna inte laddas om. Det upplevs
+        verkligen som en riktigt app och det är coolt!</p>
+</section>
