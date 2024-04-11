@@ -1,0 +1,46 @@
+@use '../../styles/abstracts';
+
+// Cursor för klickbar bild
+img {
+    cursor: pointer;
+    width: 100%;
+}
+
+// Flexbox för innehåll på start
+#flexbox {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+}
+
+// Maxbredd på section
+section {
+    margin: 0 0 0 5rem;
+    max-width: 400px;
+}
+
+// Extend för knappstyling
+button {
+    @extend %button-style;
+}
+
+// Centrerar text
+#cat-talk {
+    text-align: center;
+}
+
+// Mindre enheter
+@media (max-width: 800px) {
+
+    // Byter flex-direction
+    #flexbox {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+
+    section {
+        margin: 0 0 2rem 0;
+        max-width: 800px;
+    }
+}
