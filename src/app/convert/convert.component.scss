@@ -1,3 +1,5 @@
+@use '../../styles/abstracts';
+
 .convert-calculator {
     width: 100%;
     max-width: 500px;
@@ -11,4 +13,15 @@
         padding: 2rem 0 0 0;
         margin: 5rem 0 2rem 0;
     }
+}
+
+// Styling för input
+input {
+    @include abstracts.heading-style(1.4rem, 2.4rem, 400);
+    color: abstracts.$text-color;
+    height: 3rem;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 0 2rem 0;
+    border-radius: 5px;
 }
