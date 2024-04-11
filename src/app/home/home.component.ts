@@ -19,7 +19,7 @@ export class HomeComponent {
     // Kontrollerar om bilden är bild 1, byter till bild 2 och ändrar kattens prat
     if (this.catImage == "assets/images/cat1.png") {
       this.catImage = "assets/images/cat2.png";
-      this.catTalk = "<strong>Hej på dig, hoppas du får en Majuig dag!</strong>";
+      this.catTalk = "<strong>Hej på dig, hoppas du får en Mjauig dag!</strong>";
       // Kontrollerar om bilden är bild 2, byter till bild 1 och ändrar kattens prat
     } else if (this.catImage = "assets/images/cat2.png") {
       this.catImage = "assets/images/cat1.png";
